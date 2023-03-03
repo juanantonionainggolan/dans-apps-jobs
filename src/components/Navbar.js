@@ -2,7 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-light" role="navigation" aria-label="main navigation">
+      <div className='container'>
       <div className="navbar-brand">
         <a className="navbar-item" href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
@@ -33,6 +34,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </nav>
   )
