@@ -1,6 +1,6 @@
-import React from 'react'
-import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -8,9 +8,9 @@ const Navbar = () => {
   const Logout = async () => {
     try {
         await axios.delete('http://localhost:4000/logout');
-        navigate('/')
+        navigate('/');
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
   }
 
